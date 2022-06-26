@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "5ecf38cd-831e-4074-a3f1-18940b6d0250",
+		"name": "movimiento.mjaramilloapis.ec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13171929"
+	},
+	"item": [
+		{
+			"name": "1_CrearMovimiento478758_SaldoInicial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 2000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/478758",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"478758"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_CrearMovimiento225487_SaldoInicial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/225487",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"225487"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_CrearMovimiento496825_SaldoInicial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 540\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/496825",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"496825"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_CrearMovimiento585545_SaldoInicial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/585545",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"585545"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimiento478758",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"RET\",\r\n  \"valor\": 575\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/478758",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"478758"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimiento225487",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 600\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/225487",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"225487"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimiento495878",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"DEP\",\r\n  \"valor\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/495878",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"495878"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimiento496825",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipoMovimiento\": \"RET\",\r\n  \"valor\": 540\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/movimientos/crear/496825",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"crear",
+						"496825"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReporteMovimientosPorIdFechas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/movimientos/listarMovimientos/1/2022-06-25/2022-06-27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"movimientos",
+						"listarMovimientos",
+						"1",
+						"2022-06-25",
+						"2022-06-27"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
