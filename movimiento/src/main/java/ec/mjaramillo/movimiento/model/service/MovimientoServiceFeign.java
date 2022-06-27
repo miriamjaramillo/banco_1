@@ -141,7 +141,6 @@ public class MovimientoServiceFeign implements MovimientoService {
 		List<ListaMovimientos> result = new ArrayList<>(rows.size());
 		
 		for (Object[] row : rows) {
-			System.out.println(row[4]);
 		    result.add(new ListaMovimientos((Date) row[0],
 		                            (String) row[1],
 		                            (String) row[2], 

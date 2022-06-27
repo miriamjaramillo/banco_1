@@ -9,8 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ec.mjaramillo</groupId>
-	<artifactId>ec.mjaramillo.cuenta</artifactId>
+	<artifactId>ec.mjaramillo.movimiento</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
 	<name>movimiento</name>
 	<description>Movimientos API</description>
 	<properties>

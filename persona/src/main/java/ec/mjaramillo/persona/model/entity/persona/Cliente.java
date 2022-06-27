@@ -15,13 +15,6 @@ public class Cliente extends Persona implements Serializable{
 	
 	private String contrasena;
 	private String estado;
-
-	/*public Cliente(Persona persona, String contrasena, String estado) {
-		super(persona.getIdentificacion(), persona.getNombre(), persona.getGenero(), persona.getEdad(), 
-				persona.getDireccion(), persona.getTelefono());
-		this.estado = estado;
-		this.contrasena = contrasena;
-	}*/
 	
 	public Cliente() {	
 	}
@@ -32,11 +25,6 @@ public class Cliente extends Persona implements Serializable{
 		this.estado = estado;
 		this.contrasena = contrasena;
 	}
-	
-	/*public Cliente(Persona persona) {
-		super(persona.getIdentificacion(), persona.getNombre(), persona.getGenero(), persona.getEdad(), 
-				persona.getDireccion(), persona.getTelefono());
-	}*/
 
 	public String getContrasena() {
 		return contrasena;

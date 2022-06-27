@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import ec.mjaramillo.cuenta.model.entity.persona.Cliente;
 
 
-@FeignClient(name="persona.mjaramilloapis.ec", url="localhost:8081")
+@FeignClient(name="persona.mjaramilloapis.ec")
 public interface PersonaClienteRest {
 	
 	@GetMapping("/clientes/obtenerClientePorId/{idCliente}")

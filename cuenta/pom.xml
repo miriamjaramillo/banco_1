@@ -11,6 +11,8 @@
 	<groupId>ec.mjaramillo</groupId>
 	<artifactId>mjaramillo.cuenta.ec</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
 	<name>cuenta</name>
 	<description>Cuentas API</description>
 	<properties>
