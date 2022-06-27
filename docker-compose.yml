@@ -1,23 +1,66 @@
 version: '3.1'
 services:
 
-  app:
-    container_name: app-producto-mjaramillo
-    image: app-producto-mjaramillo
-    build: ./
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/banco
-    ports:
-      - "8081:8081"
-    depends_on:
-      - db
-         
-  db:
-    container_name: db
-    image: postgres
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_PASSWORD=mjaramillo
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=banco
+ microservicio-eureka-server:
+  container_name: eureka-server-mjaramillo
+  image: eureka-server-mjaramillo
+  build:
+   context: .
+   dockerfile: docker_file/eureka.dockerfile
+  environment:
+   - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/banco
+  ports:
+   - "8761:8761"
+  depends_on:
+   - db
+
+ microservicio-persona:
+  container_name: persona-producto-mjaramillo
+  image: persona-mjaramillo
+  build:
+   context: .
+   dockerfile: docker_file/persona.dockerfile
+  environment:
+   - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/banco
+  ports:
+   - "8081:8081"
+  depends_on:
+   - db
+   
+ micorservicio-cuenta:
+  container_name: cuenta-producto-mjaramillo
+  image: cuenta-mjaramillo
+  build:
+   context: .
+   dockerfile: docker_file/cuenta.dockerfile
+  environment:
+   - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/banco
+  ports:
+   - "8082:8082"
+  depends_on:
+   - db
+   
+ microservicio-movimiento:
+  container_name: movimiento-producto-mjaramillo
+  image: movimiento-mjaramillo
+  build:
+   context: .
+   dockerfile: docker_file/movimiento.dockerfile
+  environment:
+   - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/banco
+  ports:
+   - "8083:8083"
+  depends_on:
+   - db
+
+ #PostreSQL Service
+ db:
+  container_name: db
+  image: postgres
+  ports:
+   - "5432:5432"
+  environment:
+   - POSTGRES_PASSWORD=mjaramillo
+   - POSTGRES_USER=postgres
+   - POSTGRES_DB=banco
+
